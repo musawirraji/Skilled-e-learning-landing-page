@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  background: linear-gradient(#ffffff, #e5f3fb);
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+nav {
+  flex: 0 0 auto;
+}
+#banner {
+  flex: 1 0 auto;
+}
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.nav-top h1 {
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-weight: 800;
+  align-self: center;
+}
+.nav-top .nav-btn {
+  padding: 2rem;
+  border: none;
+  border-radius: 4rem;
+  min-width: 18rem;
+  background: #13183f;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 1s ease;
+}
+.nav-top .nav-btn:hover {
+  background: #5e638e;
+}
+
+/* ############### Banner ################ */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.banner-heading {
+  flex: 0 0 auto;
+}
+.banner-img {
+  flex: 0 0 auto;
+}
+.banner-title {
+  font-size: 5rem;
+  color: #13183f;
+}
+.banner-subtitle {
+  font-size: 2.2rem;
+  color: #83869a;
+  margin: 2rem 0 2rem 0;
+}
+.banner-btn {
+  min-width: 18rem;
+  padding: 2.4rem;
+  border-radius: 5rem;
+  background: linear-gradient(#ff6f38, #f02aa6);
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.banner-btn:hover {
+  background: linear-gradient(#f19d7b, #f589cd);
+  cursor: pointer;
+}
+.banner-img {
+  width: 45rem;
+  margin: 3rem auto 0;
+}
+@media (min-width: 690px) {
+  #banner {
+    margin: 5rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #banner-hero {
+    background: url(../assets/image-hero-tablet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    width: 50%;
+    height: 70vh;
+    flex: 0 0 auto;
+    z-index: -99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+  .banner-img {
+    display: none;
+  }
+  .banner-heading {
+    flex: 1 0 auto;
+    max-width: 50%;
+  }
+  .banner-btn {
+    z-index: 99;
+  }
+}
+@media (min-width: 892px) {
+  #header {
+    padding: 0 5rem;
+  }
+  #banner-hero {
+    background: url(../assets/image-hero-desktop.png);
+    background-position: -50px -100px;
+    background-size: auto 120%;
+    height: 70vh;
+    z-index: -99;
+  }
+}
+@media (min-width: 1300px) {
+  #header {
+    padding: 0 10rem;
+  }
+  #banner-hero {
+    background-position: -40px -130px;
+    background-size: auto 110%;
+    width: 30%;
+  }
+}
+/* #########Courses############# */
+#courses {
+  padding: 2rem;
+}
+.card {
+  background: #ffffff;
+  padding: 0 3rem 3rem;
+  font-size: 2rem;
+  width: 400px;
+  height: 38vh;
+}
+#courses .title {
+  background: linear-gradient(#ff6f48, #f02aa6);
+  color: #ffffff;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  height: 15vh;
+}
+fieldset {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+fieldset p {
+  margin: 1rem 0;
+}
+
+fieldset a {
+  text-decoration: none;
+  color: #f74780;
+  margin: 4rem 0;
+  transition: color 0.5s ease;
+}
+fieldset a:hover {
+  color: #df8da7;
+}
+@media (min-width: 576px) {
+  #banner {
+    margin-bottom: 0;
+  }
+  #header {
+    margin-bottom: 0;
+  }
+  #courses {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  #courses .title {
+    height: 35vh;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    flex: 0 1 calc(33% - 1em);
+  }
+}
+
+/* ########### Footer ############# */
+
+footer {
+  background: #13183f;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer-btn {
+  min-width: 18rem;
+  padding: 2rem;
+  border-radius: 5rem;
+  background: linear-gradient(#4851ff, #f02aa6);
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.footer-btn:hover {
+  background: linear-gradient(#a7abf4, #f39ed4);
+  cursor: pointer;
+}
+@media (min-width: 567px) {
+  footer {
+    padding: 3rem 10rem;
+  }
+}
